@@ -1,0 +1,62 @@
+NvimTree:
+
+- C-f abre y cierra NvimTree
+- en normal mode las flechas sirven para moverse entre ventanas
+- C-H esconde dotfiles
+- a crea archivo si agreago / crea carpeta
+- d elimina el archivo/carpeta
+- r rename
+- C-r full rename 
+- c copia el archivo
+- p pega el archivo
+
+
+
+- C-l vim redrwas screen
+
+Resize windows:
+
+- C + keys
+
+
+Telescope:
+
+- <leader>f toggles Telescope
+
+
+Bufers:
+- <S-l> bnext
+- <S-h> bprevious
+- <leader>q close buffer
+
+
+Buscar en archivo:
+- n para siguiente 
+- N para anterior
+
+
+- g-x abre url en browser
+
+- % sobre { ( [ o if/elif te matchea con el par
+
+- jj mapeado a esc
+
+terminal keybindings:
+C-l  clear screen
+C-n next in history
+C-p previous in history
+
+
+Sound/ Media:
+- C-A-p play/stop playback
+- C-A-k / C-A-up volume up
+- C-A-j / C-A-down volume down
+- C-A-n next track
+- C-A-p previous tab
+
+S - v entra en visual line mode, al apretar : nos permite ejercutar comandos en esas líneas seleccionadas, por ejemplo sustituir
+
+< ap indenta el párrafo y > ap saca la indentación
+el ap es around paragraph.
+
+:Telescope keymaps => show keymaps
