@@ -1,12 +1,14 @@
 require("plugins")
 require("mappings")
+require("autocomands")
 require("lualine-config")
 require("bufferline-config")
 require("command-completition-config")
 require("treesitter-config")
 require("telescope-config")
-require("lsp_config")
 require("mason-config")
+require("lsp_config")
+require("luasnip-config")
 vim.cmd "set background=dark"
 vim.cmd "colorscheme nightfox"
 vim.cmd "set nu"

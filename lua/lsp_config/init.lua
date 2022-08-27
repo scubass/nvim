@@ -155,9 +155,9 @@ cmp.setup({
 	}),
 	sources = cmp.config.sources({
 		{ name = 'nvim_lsp' },
+		{ name = 'nvim_lua' },
 		{ name = 'luasnip' },
 		{ name = 'cmp_tabnine' },
-		{ name = 'nvim_lua' },
 		{ name = 'path' },
 		{ name = 'buffer' },
 	})
@@ -171,3 +171,4 @@ cmp.setup.filetype('gitcommit', {
 		{ name = 'buffer' },
 	})
 })
+

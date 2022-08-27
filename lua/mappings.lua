@@ -27,6 +27,9 @@ keymap("n", "<leader>fm", "<cmd>Telescope man_pages<cr>", opts)
 -- Nvim-tree
 keymap("n", "<C-f>", "<cmd>NvimTreeToggle<cr>", opts)
 
+-- https://www.youtube.com/watch?v=k_PBlhH-DKk&list=LL&index=1
+keymap("n", "<leader>z", ":%s/<C-R><C-W>/<C-R>0/g<CR>", opts)
+
 
 
 -- better windows resize

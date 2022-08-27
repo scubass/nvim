@@ -56,26 +56,11 @@ return require('packer').startup(function()
   -- Load on an autocommand event
   use {'andymass/vim-matchup', event = 'VimEnter'}
   -- Load on a combination of conditions: specific filetypes or commands
-  -- Also run code after load (see the "config" key)
-  use {
-    'w0rp/ale',
-    ft = {'sh', 'zsh', 'bash', 'c', 'cpp', 'cmake', 'html', 'markdown', 'racket', 'vim', 'tex'},
-    cmd = 'ALEEnable',
-    config = 'vim.cmd[[ALEEnable]]'
-  }
-  -- Autocompletition cmp
---  use {'neoclide/coc.nvim', branch = "release"}
+
+
   -- init.lua
   use "lukas-reineke/indent-blankline.nvim"
 
-  -- Plugins can have dependencies on other plugins
-  use {
-    'haorenW1025/completion-nvim',
-    opt = true,
-    requires = {{'hrsh7th/vim-vsnip', opt = true}, {'hrsh7th/vim-vsnip-integ', opt = true}}
-  }
-  -- Plugins can have post-install/update hooks
-  use {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install', cmd = 'MarkdownPreview'}
 
   -- Post-install/update hook with neovim command
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
@@ -111,7 +96,8 @@ return require('packer').startup(function()
   use { 'honza/vim-snippets' }
   use { 'rafamadriz/friendly-snippets' }
   use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
-
+  use { 'molleweide/luasnip-snippets.nvim'}
+  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
   -- Colorschemes
   use {'dracula/vim', as = 'dracula'}
