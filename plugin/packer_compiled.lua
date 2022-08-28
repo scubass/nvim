@@ -80,12 +80,6 @@ _G.packer_plugins = {
     path = "/home/santiago/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["alpha-nvim"] = {
-    config = { "\27LJ\2\2a\0\0\3\0\5\0\n6\0\0\0'\1\1\0B\0\2\0029\0\2\0006\1\0\0'\2\3\0B\1\2\0029\1\4\1B\0\2\1K\0\1\0\vconfig\27alpha.themes.dashboard\nsetup\nalpha\frequire\0" },
-    loaded = true,
-    path = "/home/santiago/.local/share/nvim/site/pack/packer/start/alpha-nvim",
-    url = "https://github.com/goolord/alpha-nvim"
-  },
   ["autoclose.nvim"] = {
     loaded = true,
     path = "/home/santiago/.local/share/nvim/site/pack/packer/start/autoclose.nvim",
@@ -95,12 +89,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/santiago/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
-  },
-  ["carbon-now.nvim"] = {
-    config = { "\27LJ\2\0028\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15carbon-now\frequire\0" },
-    loaded = true,
-    path = "/home/santiago/.local/share/nvim/site/pack/packer/start/carbon-now.nvim",
-    url = "https://github.com/ellisonleao/carbon-now.nvim"
   },
   catppuccin = {
     loaded = true,
@@ -137,6 +125,11 @@ _G.packer_plugins = {
     path = "/home/santiago/.local/share/nvim/site/pack/packer/start/command-completion.nvim",
     url = "https://github.com/smolck/command-completion.nvim"
   },
+  ["dashboard-nvim"] = {
+    loaded = true,
+    path = "/home/santiago/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
+    url = "https://github.com/glepnir/dashboard-nvim"
+  },
   dracula = {
     loaded = true,
     path = "/home/santiago/.local/share/nvim/site/pack/packer/start/dracula",
@@ -162,6 +155,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/santiago/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
+  },
+  ["headlines.nvim"] = {
+    loaded = true,
+    path = "/home/santiago/.local/share/nvim/site/pack/packer/start/headlines.nvim",
+    url = "https://github.com/lukas-reineke/headlines.nvim"
   },
   ["indent-blankline.nvim"] = {
     loaded = true,
@@ -198,10 +196,20 @@ _G.packer_plugins = {
     path = "/home/santiago/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  neovim = {
+    loaded = true,
+    path = "/home/santiago/.local/share/nvim/site/pack/packer/start/neovim",
+    url = "https://github.com/rose-pine/neovim"
+  },
   ["nightfox.nvim"] = {
     loaded = true,
     path = "/home/santiago/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
     url = "https://github.com/EdenEast/nightfox.nvim"
+  },
+  ["nnn.nvim"] = {
+    loaded = true,
+    path = "/home/santiago/.local/share/nvim/site/pack/packer/start/nnn.nvim",
+    url = "https://github.com/luukvbaal/nnn.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -212,16 +220,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/santiago/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
-  },
-  ["nvim-transparent"] = {
-    loaded = true,
-    path = "/home/santiago/.local/share/nvim/site/pack/packer/start/nvim-transparent",
-    url = "https://github.com/xiyaowong/nvim-transparent"
-  },
-  ["nvim-tree.lua"] = {
-    loaded = true,
-    path = "/home/santiago/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
-    url = "https://github.com/kyazdani42/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -238,6 +236,16 @@ _G.packer_plugins = {
     path = "/home/santiago/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
+  ["org-bullets.nvim"] = {
+    loaded = true,
+    path = "/home/santiago/.local/share/nvim/site/pack/packer/start/org-bullets.nvim",
+    url = "https://github.com/akinsho/org-bullets.nvim"
+  },
+  orgmode = {
+    loaded = true,
+    path = "/home/santiago/.local/share/nvim/site/pack/packer/start/orgmode",
+    url = "https://github.com/nvim-orgmode/orgmode"
+  },
   ["oxocarbon.nvim"] = {
     loaded = true,
     path = "/home/santiago/.local/share/nvim/site/pack/packer/start/oxocarbon.nvim",
@@ -252,6 +260,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/santiago/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  sniprun = {
+    loaded = true,
+    path = "/home/santiago/.local/share/nvim/site/pack/packer/start/sniprun",
+    url = "https://github.com/michaelb/sniprun"
   },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
@@ -307,22 +320,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: carbon-now.nvim
-time([[Config for carbon-now.nvim]], true)
-try_loadstring("\27LJ\2\0028\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15carbon-now\frequire\0", "config", "carbon-now.nvim")
-time([[Config for carbon-now.nvim]], false)
--- Config for: Comment.nvim
-time([[Config for Comment.nvim]], true)
-try_loadstring("\27LJ\2\0025\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
-time([[Config for Comment.nvim]], false)
 -- Config for: gitsigns.nvim
 time([[Config for gitsigns.nvim]], true)
 try_loadstring("\27LJ\2\0026\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
 time([[Config for gitsigns.nvim]], false)
--- Config for: alpha-nvim
-time([[Config for alpha-nvim]], true)
-try_loadstring("\27LJ\2\2a\0\0\3\0\5\0\n6\0\0\0'\1\1\0B\0\2\0029\0\2\0006\1\0\0'\2\3\0B\1\2\0029\1\4\1B\0\2\1K\0\1\0\vconfig\27alpha.themes.dashboard\nsetup\nalpha\frequire\0", "config", "alpha-nvim")
-time([[Config for alpha-nvim]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+try_loadstring("\27LJ\2\0025\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+time([[Config for Comment.nvim]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)

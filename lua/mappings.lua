@@ -23,13 +23,23 @@ keymap("n", "<leader>fk", "<cmd>Telescope keymaps<cr>", opts)
 keymap("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", opts)
 keymap("n", "<leader>fb", "<cmd>Telescope buffers<cr>", opts)
 keymap("n", "<leader>fm", "<cmd>Telescope man_pages<cr>", opts)
+keymap("n", "<leader>f.", "<cmd>Telescope find_files search_dirs={'~/.config/nvim'}<cr>", opts)
+keymap("n", "<leader>ff", "<cmd>Telescope find_files search_dirs={'~/Facultad/PI/'}<cr>", opts)
+keymap("n", "<leader>fw", "<cmd>Telescope live_grep<cr>", opts)
 
--- Nvim-tree
-keymap("n", "<C-f>", "<cmd>NvimTreeToggle<cr>", opts)
+-- Nnn
+-- open nnn in current buffer file directory
+keymap("n", "<leader>nb", "<cmd>NnnPicker %:p:h<cr>", opts)
+-- open nnn in home folder
+keymap("n", "<leader>nh", "<cmd>NnnPicker ~/<cr>", opts)
+
 
 -- https://www.youtube.com/watch?v=k_PBlhH-DKk&list=LL&index=1
 keymap("n", "<leader>z", ":%s/<C-R><C-W>/<C-R>0/g<CR>", opts)
 
+
+-- Packer
+keymap("n", "<leader>z", "<cmd>PackerUpdate<cr>", opts)
 
 
 -- better windows resize

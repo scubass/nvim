@@ -8,7 +8,7 @@ vim.keymap.set('n', '<space>e', vim.diagnostic.open_float, opts)
 vim.keymap.set('n', 'dn', vim.diagnostic.goto_prev, opts)
 vim.keymap.set('n', 'dp', vim.diagnostic.goto_next, opts)
 vim.keymap.set('n', '<space>dl', vim.diagnostic.setloclist, opts)
-vim.keymap.set('n', '<space>s', "<cmd>Telescope diagnostics<CR>", opts)
+vim.keymap.set('n', '<space>d', "<cmd>Telescope diagnostics<CR>", opts)
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
@@ -158,6 +158,7 @@ cmp.setup({
 		{ name = 'nvim_lua' },
 		{ name = 'luasnip' },
 		{ name = 'cmp_tabnine' },
+		{ name = 'orgmode' },
 		{ name = 'path' },
 		{ name = 'buffer' },
 	})

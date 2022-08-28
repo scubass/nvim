@@ -7,15 +7,7 @@ return require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
   -- Simple plugins can be specified as strings
-  use {
-  'kyazdani42/nvim-tree.lua',
-  requires = {
-    'kyazdani42/nvim-web-devicons', -- optional, for file icons
-  },
-  tag = 'nightly' -- optional, updated every week. (see issue #1193)
-  }
 
-  use { 'xiyaowong/nvim-transparent' }
   use {
       'numToStr/Comment.nvim',
       config = function()
@@ -30,12 +22,13 @@ return require('packer').startup(function()
   requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
   -- start screen
-  use {
-    'goolord/alpha-nvim',
-    config = function ()
-        require'alpha'.setup(require'alpha.themes.dashboard'.config)
-    end
-  }
+  -- use {
+  --   'goolord/alpha-nvim',
+  --   config = function ()
+  --       require'alpha'.setup(require'alpha.themes.dashboard'.config)
+  --   end
+  -- }
+
   --comand-copletition
   use 'smolck/command-completion.nvim'
   -- telescope
@@ -76,9 +69,6 @@ return require('packer').startup(function()
     config = function() require('gitsigns').setup() end
   }
 
-  -- You can specify multiple plugins in a single call
-  use {"ellisonleao/carbon-now.nvim", config = function() require('carbon-now').setup() end}
-
 
   -- vimwiki
   use { 'vimwiki/vimwiki' }
@@ -106,7 +96,17 @@ return require('packer').startup(function()
   use { "catppuccin/nvim", as = "catppuccin" }
   use { 'whatyouhide/vim-gotham' }
   use { 'EdenEast/nightfox.nvim' }
-require("nvim-tree").setup()
+  use { 'rose-pine/neovim', tag = 'v1.*' }
+
+  use { 'luukvbaal/nnn.nvim' }
+  -- Problem with treesitter
+  -- use { 'nvim-neorg/neorg', requires = 'nvim-lua/plenary.nvim' }
+
+  use { 'glepnir/dashboard-nvim' }
+  use { 'nvim-orgmode/orgmode' }
+  use { 'akinsho/org-bullets.nvim' }
+  use { 'lukas-reineke/headlines.nvim' }
+  use { 'michaelb/sniprun', run = 'bash ./install.sh' }
 
 
 
