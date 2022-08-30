@@ -97,6 +97,7 @@ return require('packer').startup(function()
   use { 'whatyouhide/vim-gotham' }
   use { 'EdenEast/nightfox.nvim' }
   use { 'rose-pine/neovim', tag = 'v1.*' }
+  use { 'rebelot/kanagawa.nvim' }
 
   use { 'luukvbaal/nnn.nvim' }
   -- Problem with treesitter

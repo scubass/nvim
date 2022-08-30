@@ -5,13 +5,18 @@ au TextYankPost * silent! lua vim.highlight.on_yank({higroup="Visual", timeout=2
 augroup END
 ]]
 
---
--- vim.api.nvim_create_autocomd("FileType", {
--- 	pattern= "c",
--- 	callback = function ()
--- 		vim.schedule(function ()
--- 			vim.cmd("setlocal makeprg=gcc\\ -Wall\\ --pedantic\\ stc=c99")
--- 		end)
--- 	end,
--- })
---
+
+vim.api.nvim_create_autocmd("FileType", {
+	pattern= "c",
+	callback = function ()
+			vim.cmd("setlocal makeprg=gcc\\ -Wall\\ --pedantic\\ -std=c99\\ -o\\ %:p:r\\ -lm")
+	end,
+})
+
+-- cuidado con correr un archivo que piede getnum dentro de vim directamente con !./nombre del ejecutabe
+vim.api.nvim_create_user_command("GetNum", function ()
+	print "primer comand escrito en lua señor"
+	local command = vim.cmd("setlocal makeprg=gcc\\ -Wall\\ --pedantic\\ -std=c99\\ -o\\ %:p:r\\ -lm\\ ~/Facultad/PI/guias/getnum.c")
+	local prints = print "hola esto es prints"
+
+end, {})
