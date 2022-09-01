@@ -37,6 +37,7 @@ return require('packer').startup(function()
   -- or                            , branch = '0.1.x',
   requires = { {'nvim-lua/plenary.nvim'} }
   }
+  use { 'nvim-telescope/telescope-file-browser.nvim' }
 
   -- Bufferline
   use "akinsho/bufferline.nvim"
@@ -98,6 +99,7 @@ return require('packer').startup(function()
   use { 'EdenEast/nightfox.nvim' }
   use { 'rose-pine/neovim', tag = 'v1.*' }
   use { 'rebelot/kanagawa.nvim' }
+  use { 'folke/tokyonight.nvim' }
 
   use { 'luukvbaal/nnn.nvim' }
   -- Problem with treesitter
