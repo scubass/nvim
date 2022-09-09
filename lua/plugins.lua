@@ -112,5 +112,10 @@ return require('packer').startup(function()
   use { 'michaelb/sniprun', run = 'bash ./install.sh' }
 
 
+  -- vim.surround
+  use { 'tpope/vim-surround' }
+
+  -- toggle term
+  use { 'akinsho/toggleterm.nvim' }
 
 end)

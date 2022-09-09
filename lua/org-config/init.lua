@@ -16,6 +16,6 @@ require('orgmode').setup({
 
 require('org-bullets').setup()
 
-require('headlines').setup()
+-- require('headlines').setup()
 
 
