@@ -33,6 +33,8 @@ keymap("n", "<leader>nb", "<cmd>NnnPicker %:p:h<cr>", opts)
 -- open nnn in home folder
 keymap("n", "<leader>nh", "<cmd>NnnPicker ~/<cr>", opts)
 
+keymap("n", "<leader>C", "<cmd>make %<cr>", opts)
+keymap("n", "<leader>S", "<cmd>source %<cr>", opts)
 
 -- https://www.youtube.com/watch?v=k_PBlhH-DKk&list=LL&index=1
 keymap("n", "<leader>z", ":%s/<C-R><C-W>/<C-R>0/g<CR>", opts)

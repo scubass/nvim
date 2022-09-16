@@ -14,7 +14,7 @@ require("dashboard-config")
 require("org-config")
 require("toggleterm-config")
 vim.cmd "set background=dark"
-vim.cmd "colorscheme dracula"
+vim.cmd "colorscheme catppuccin"
 vim.cmd "set nu"
 vim.cmd "set relativenumber"
 vim.cmd "set scrolloff=14"
