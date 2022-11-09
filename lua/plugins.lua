@@ -16,7 +16,13 @@ return require('packer').startup(function()
   }
   use { 'ggandor/lightspeed.nvim' }
   use { 'tpope/vim-repeat'}
-  use 'max-0406/autoclose.nvim'
+  -- use 'max-0406/autoclose.nvim'
+
+  use {
+	"windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+  }
+
   use {
   'nvim-lualine/lualine.nvim',
   requires = { 'kyazdani42/nvim-web-devicons', opt = true }
@@ -79,6 +85,7 @@ return require('packer').startup(function()
   use { 'williamboman/mason-lspconfig.nvim' }
   use { 'hrsh7th/nvim-cmp' }
   use { 'hrsh7th/cmp-nvim-lsp' }
+  use { 'hrsh7th/cmp-nvim-lua' }
   use { 'saadparwaiz1/cmp_luasnip' }
   use { 'L3MON4D3/LuaSnip' }
   use { 'hrsh7th/cmp-path' }
@@ -118,4 +125,23 @@ return require('packer').startup(function()
   -- toggle term
   use { 'akinsho/toggleterm.nvim' }
 
+  use { 'ThePrimeagen/vim-be-good' }
+
+
+  use {
+  "folke/which-key.nvim",
+  config = function()
+    require("which-key").setup {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    }
+  end
+  }
+
+  use { 'lewis6991/impatient.nvim' }
+  use { 'stevearc/aerial.nvim' , tag='nvim-0.5'}
+
+
 end)
+

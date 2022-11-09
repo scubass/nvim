@@ -1,20 +1,9 @@
+require("impatient")
 require("plugins")
 require("mappings")
 require("autocomands")
-require("lualine-config")
-require("bufferline-config")
-require("command-completition-config")
-require("treesitter-config")
-require("telescope-config")
-require("mason-config")
-require("lsp_config")
-require("luasnip-config")
-require("nnn-config")
-require("dashboard-config")
-require("org-config")
-require("toggleterm-config")
 vim.cmd "set background=dark"
-vim.cmd "colorscheme catppuccin"
+vim.cmd "colorscheme tokyonight"
 vim.cmd "set nu"
 vim.cmd "set relativenumber"
 vim.cmd "set scrolloff=14"
@@ -26,5 +15,6 @@ vim.cmd "set nocompatible"
 vim.cmd "filetype plugin on"
 vim.cmd "syntax on"
 vim.cmd "set termguicolors"
-vim.cmd "set foldmethod=expr"
-vim.cmd "set foldexpr=nvim_treesitter#foldexpr()"
+-- vim.cmd "set makeprg=gcc\\ -Wall\\ --pedantic\\ -std=c99\\ -o\\ %:p:r"
+
+  require('aerial').setup()

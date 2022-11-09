@@ -18,14 +18,16 @@ keymap("t","jj", "<C-\\><C-n>", opts)
 
 -- Telescope
 keymap("n", "<leader>t", "<cmd>Telescope find_files theme=dropdown<cr>", opts)
-keymap("n", "<leader>fc", "<cmd>Telescope colorscheme<cr>", opts)
+keymap("n", "<leader>fc", "<cmd>Telescope colorscheme enable_preview=true<cr>", opts)
 keymap("n", "<leader>fk", "<cmd>Telescope keymaps<cr>", opts)
 keymap("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", opts)
 keymap("n", "<leader>fb", "<cmd>Telescope buffers<cr>", opts)
 keymap("n", "<leader>fm", "<cmd>Telescope man_pages<cr>", opts)
 keymap("n", "<leader>f.", "<cmd>Telescope find_files search_dirs={'~/.config/nvim'}<cr>", opts)
 keymap("n", "<leader>ff", "<cmd>Telescope find_files search_dirs={'~/Facultad/PI/'}<cr>", opts)
+keymap("n", "<leader>h", "<cmd>Telescope find_files search_dirs={'~/'}<cr>", opts)
 keymap("n", "<leader>fw", "<cmd>Telescope live_grep<cr>", opts)
+keymap("n", "<leader>fb", "<cmd>Telescope buffers<cr>", opts)
 
 -- Nnn
 -- open nnn in current buffer file directory
@@ -42,7 +44,9 @@ keymap("n", "<leader>z", ":%s/<C-R><C-W>/<C-R>0/g<CR>", opts)
 
 -- Packer
 keymap("n", "<leader>z", "<cmd>PackerUpdate<cr>", opts)
+keymap("n", "<leader>Z", "<cmd>PackerSync<cr>", opts)
 
+keymap("n", "<leader>R", "<cmd>! cargo run<cr>", opts)
 
 -- better windows resize
 
@@ -50,6 +54,7 @@ keymap("n", "<C-Up>", "<cmd>resize +2<cr>", opts)
 keymap("n", "<C-Down>", "<cmd>resize -2<cr>", opts)
 keymap("n", "<C-Left>", "<cmd>vertical resize -2<cr>", opts)
 keymap("n", "<C-Right>", "<cmd>vertical resize +2<cr>", opts)
+keymap("n", "<leader>c", "<cmd>close<cr>", opts)
 
 
 --buffer commands
